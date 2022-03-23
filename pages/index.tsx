@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Navbar from "../components/navbar/navbar";
 import Footer from "../components/footer/footer";
 import styles from "../styles/Home.module.css";
 
@@ -14,7 +15,8 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="relative bg-gray-100 pt-24 lg:pt-28 pb-16 min-h-screen">
+      <Navbar />
+      <div className="relative bg-gray-100 pt-6 lg:pt-10 pb-16 min-h-screen">
         <main></main>
         <Footer />
       </div>
