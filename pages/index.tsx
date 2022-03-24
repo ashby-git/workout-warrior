@@ -4,6 +4,7 @@ import Navbar from "../components/navbar/navbar";
 import Footer from "../components/footer/footer";
 import styles from "../styles/Home.module.css";
 import Carousel from "../components/carousel/carousel";
+import Table from "../components/table/table";
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,9 @@ const Home: NextPage = () => {
       <div className="relative bg-gray-100 pt-6 lg:pt-10 pb-16 min-h-screen">
         <main>
           <Carousel />
+          <div className="py-10 max-w-max mx-auto">
+            <Table />
+          </div>
         </main>
         <Footer />
       </div>
