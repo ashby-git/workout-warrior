@@ -1,4 +1,5 @@
 import React from "react";
+import { PlusIcon } from "@heroicons/react/outline";
 
 const Table = () => {
   return (
@@ -151,6 +152,18 @@ const Table = () => {
             </tr>
           </tbody>
         </table>
+      </div>
+      <div className="flex space-x-2 justify-center my-5">
+        <button
+          type="button"
+          className="inline-block rounded-full bg-blue-600 text-white
+             leading-normal uppercase shadow-md hover:bg-blue-700 hover:shadow-lg 
+             focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 
+             active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out 
+             w-9 h-9 cursor-pointer"
+        >
+          <PlusIcon />
+        </button>
       </div>
     </>
   );
