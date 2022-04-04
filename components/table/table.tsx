@@ -56,7 +56,7 @@ const Table = () => {
               <td className="px-6 py-4 text-right">
                 <a
                   href="#"
-                  className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                  className="font-medium text-indigo-600 dark:text-indigo-500 hover:underline"
                 >
                   Edit
                 </a>
@@ -78,7 +78,7 @@ const Table = () => {
               <td className="px-6 py-4 text-right">
                 <a
                   href="#"
-                  className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                  className="font-medium text-indigo-600 dark:text-indigo-500 hover:underline"
                 >
                   Edit
                 </a>
@@ -100,7 +100,7 @@ const Table = () => {
               <td className="px-6 py-4 text-right">
                 <a
                   href="#"
-                  className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                  className="font-medium text-indigo-600 dark:text-indigo-500 hover:underline"
                 >
                   Edit
                 </a>
@@ -122,7 +122,7 @@ const Table = () => {
               <td className="px-6 py-4 text-right">
                 <a
                   href="#"
-                  className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                  className="font-medium text-indigo-600 dark:text-indigo-500 hover:underline"
                 >
                   Edit
                 </a>
@@ -144,7 +144,7 @@ const Table = () => {
               <td className="px-6 py-4 text-right">
                 <a
                   href="#"
-                  className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                  className="font-medium text-indigo-600 dark:text-indigo-500 hover:underline"
                 >
                   Edit
                 </a>
@@ -156,10 +156,10 @@ const Table = () => {
       <div className="flex space-x-2 justify-center my-5">
         <button
           type="button"
-          className="inline-block rounded-full bg-blue-600 text-white
-             leading-normal uppercase shadow-md hover:bg-blue-700 hover:shadow-lg 
-             focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 
-             active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out 
+          className="inline-block rounded-full bg-indigo-600 text-white
+             leading-normal uppercase shadow-md hover:bg-indigo-700 hover:shadow-lg 
+             focus:bg-indigo-700 focus:shadow-lg focus:outline-none focus:ring-0 
+             active:bg-indigo-800 active:shadow-lg transition duration-150 ease-in-out 
              w-9 h-9 cursor-pointer"
         >
           <PlusIcon />
