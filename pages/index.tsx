@@ -5,6 +5,7 @@ import Footer from "../components/footer/footer";
 import styles from "../styles/Home.module.css";
 import Carousel from "../components/carousel/carousel";
 import Table from "../components/table/table";
+import ExerciseInfoModal from "../components/exercise-info-modal/exercise-info-modal";
 
 const Home: NextPage = () => {
   return (
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
           <Carousel />
           <div className="py-10 max-w-max mx-auto">
             <Table />
+            <ExerciseInfoModal />
           </div>
         </main>
         <Footer />
