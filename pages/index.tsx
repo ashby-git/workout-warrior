@@ -6,6 +6,7 @@ import styles from "../styles/Home.module.css";
 import Carousel from "../components/carousel/carousel";
 import Table from "../components/table/table";
 import ExerciseInfoModal from "../components/exercise-info-modal/exercise-info-modal";
+import TestForm from "../components/exercise-info-modal/test-form";
 
 const Home: NextPage = () => {
   return (
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
           <div className="py-10 max-w-max mx-auto">
             <Table />
             <ExerciseInfoModal />
+            <TestForm />
           </div>
         </main>
         <Footer />
