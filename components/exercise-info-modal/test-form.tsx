@@ -7,7 +7,7 @@ const TestForm = () => {
       <form action="#" method="POST">
         <div className="shadow overflow-hidden sm:rounded-md">
           <div className="px-4 py-5 bg-white sm:p-6">
-            <div className="grid grid-cols-6 gap-2">
+            <div className="grid grid-cols-6 gap-2 sm:gap-5">
               <div className="col-span-6 sm:col-span-3">
                 <label className="block text-sm font-medium text-gray-700">
                   Day
@@ -19,7 +19,6 @@ const TestForm = () => {
                   shadow-sm sm:text-sm border-gray-300 rounded-md"
                 />
               </div>
-
               <div className="col-span-6 sm:col-span-3">
                 <label className="block text-sm font-medium text-gray-700">
                   Letter
@@ -31,7 +30,6 @@ const TestForm = () => {
                   shadow-sm sm:text-sm border-gray-300 rounded-md"
                 />
               </div>
-
               <div className="col-span-6 sm:col-span-3">
                 <label className="block text-sm font-medium text-gray-700">
                   Exercise
@@ -43,7 +41,6 @@ const TestForm = () => {
                   shadow-sm sm:text-sm border-gray-300 rounded-md"
                 />
               </div>
-
               <div className="col-span-6 sm:col-span-3">
                 <label className="block text-sm font-medium text-gray-700">
                   Intensity
@@ -55,7 +52,6 @@ const TestForm = () => {
                   shadow-sm sm:text-sm border-gray-300 rounded-md"
                 />
               </div>
-
               <div className="col-span-6 sm:col-span-6 lg:col-span-2">
                 <label className="block text-sm font-medium text-gray-700">
                   Sets
@@ -67,7 +63,6 @@ const TestForm = () => {
                   shadow-sm sm:text-sm border-gray-300 rounded-md"
                 />
               </div>
-
               <div className="col-span-6 sm:col-span-3 lg:col-span-2">
                 <label className="block text-sm font-medium text-gray-700">
                   Reps
@@ -79,7 +74,6 @@ const TestForm = () => {
                   shadow-sm sm:text-sm border-gray-300 rounded-md"
                 />
               </div>
-
               <div className="col-span-6 sm:col-span-3 lg:col-span-2">
                 <label className="block text-sm font-medium text-gray-700">
                   Rest
@@ -99,9 +93,9 @@ const TestForm = () => {
               className="w-6/12 inline-flex justify-center rounded-md border border-gray-300 
               shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 
               hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 
-              focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm"
+              focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm align-bottom"
             >
-              <TrashIcon className="h-6" />
+              <TrashIcon className="h-6 sm:h-5" />
             </button>
             <button
               type="button"
