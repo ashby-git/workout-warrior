@@ -5,7 +5,7 @@ const Table = () => {
   return (
     <>
       <h1 className="flex justify-center font-bold text-2xl">Week 1</h1>
-      <h3 className="py-3 flex justify-center font-semibold text-xl">
+      <h3 className="py-5 flex justify-center font-semibold text-xl">
         Session 1
       </h3>
 
