@@ -1,9 +1,13 @@
 import React from "react";
 import { TrashIcon } from "@heroicons/react/outline";
+import { XIcon } from "@heroicons/react/outline";
 
 const TestForm = () => {
   return (
     <div className="mt-5 md:mt-0 md:col-span-2">
+      <div className="flex justify-end translate-y-full">
+        <XIcon className="h-5 cursor-pointer" />
+      </div>
       <form action="#" method="POST">
         <div className="shadow overflow-hidden sm:rounded-md">
           <div className="px-4 py-5 bg-white sm:p-6">
