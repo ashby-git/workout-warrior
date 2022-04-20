@@ -9,7 +9,7 @@ const Table = () => {
         Session 1
       </h3>
 
-      <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+      <div className="hidden md:block relative overflow-x-auto shadow-md sm:rounded-lg">
         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
@@ -153,6 +153,165 @@ const Table = () => {
           </tbody>
         </table>
       </div>
+
+      {/* Small Table */}
+
+      <div className="md:hidden mx-auto relative overflow-x-auto rounded-lg shadow-md max-w-max">
+        <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+          <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+              <th scope="col" className="px-4 py-3">
+                <span className="mr-2">Day :</span>
+                <span>Pull1</span>
+              </th>
+
+              <th scope="col" className="px-6 py-3">
+                <span className="sr-only">Edit</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+              <th
+                scope="row"
+                className="flex items-center px-4 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap"
+              >
+                <div className="mr-3 text-gray-500">
+                  A1<span className="ml-1">:</span>
+                </div>
+                <div className="font-bold">
+                  Weighted Chinups
+                  <div className="font-normal">
+                    <span className="mr-1">4</span>x
+                    <span className="mx-1">5</span>@
+                    <span className="mx-1">30kg</span>:
+                    <span className="ml-1">5min</span>
+                  </div>
+                </div>
+              </th>
+              <td className="px-3 py-2 text-right">
+                <a
+                  href="#"
+                  className="font-medium text-indigo-600 dark:text-indigo-500 hover:underline"
+                >
+                  Edit
+                </a>
+              </td>
+            </tr>
+            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+              <th
+                scope="row"
+                className="flex items-center px-4 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap"
+              >
+                <div className="mr-3 text-gray-500">
+                  B1<span className="ml-1">:</span>
+                </div>
+                <div className="font-bold">
+                  Rows
+                  <div className="font-normal">
+                    <span className="mr-1">3</span>x
+                    <span className="mx-1">10</span>@
+                    <span className="mx-1">Tuck FL</span>:
+                    <span className="ml-1">2min</span>
+                  </div>
+                </div>
+              </th>
+              <td className="px-3 py-2 text-right">
+                <a
+                  href="#"
+                  className="font-medium text-indigo-600 dark:text-indigo-500 hover:underline"
+                >
+                  Edit
+                </a>
+              </td>
+            </tr>
+            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+              <th
+                scope="row"
+                className="flex items-center px-4 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap"
+              >
+                <div className="mr-3 text-gray-500">
+                  C1<span className="ml-1">:</span>
+                </div>
+                <div className="font-bold">
+                  Hangs
+                  <div className="font-normal">
+                    <span className="mr-1">3</span>x
+                    <span className="mx-1">30sec</span>@
+                    <span className="mx-1">One-Arm</span>:
+                    <span className="ml-1">2min</span>
+                  </div>
+                </div>
+              </th>
+              <td className="px-3 py-2 text-right">
+                <a
+                  href="#"
+                  className="font-medium text-indigo-600 dark:text-indigo-500 hover:underline"
+                >
+                  Edit
+                </a>
+              </td>
+            </tr>
+            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+              <th
+                scope="row"
+                className="flex items-center px-4 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap"
+              >
+                <div className="mr-3 text-gray-500">
+                  D1<span className="ml-1">:</span>
+                </div>
+                <div className="font-bold">
+                  Bicep Curls
+                  <div className="font-normal">
+                    <span className="mr-1">2</span>x
+                    <span className="mx-1">15</span>@
+                    <span className="mx-1">10kg</span>:
+                    <span className="ml-1">2min</span>
+                  </div>
+                </div>
+              </th>
+              <td className="px-3 py-2 text-right">
+                <a
+                  href="#"
+                  className="font-medium text-indigo-600 dark:text-indigo-500 hover:underline"
+                >
+                  Edit
+                </a>
+              </td>
+            </tr>
+            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+              <th
+                scope="row"
+                className="flex items-center px-4 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap"
+              >
+                <div className="mr-3 text-gray-500">
+                  D2<span className="ml-1">:</span>
+                </div>
+                <div className="font-bold">
+                  Wrist Curls
+                  <div className="font-normal">
+                    <span className="mr-1">2</span>x
+                    <span className="mx-1">15</span>@
+                    <span className="mx-1">5kg</span>:
+                    <span className="ml-1">1min</span>
+                  </div>
+                </div>
+              </th>
+
+              <td className="px-3 py-2 text-right">
+                <a
+                  href="#"
+                  className="font-medium text-indigo-600 dark:text-indigo-500 hover:underline"
+                >
+                  Edit
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      {/* Button */}
       <div className="flex space-x-2 justify-center my-5">
         <button
           type="button"
