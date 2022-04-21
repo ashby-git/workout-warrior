@@ -156,7 +156,7 @@ const Table = () => {
 
       {/* Small Table */}
 
-      <div className="md:hidden mx-auto relative overflow-x-auto rounded-lg shadow-md max-w-max">
+      <div className="md:hidden relative overflow-x-auto rounded-lg shadow-md w-screen">
         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
@@ -165,7 +165,7 @@ const Table = () => {
                 <span>Pull1</span>
               </th>
 
-              <th scope="col" className="px-6 py-3">
+              <th scope="col" className="px-2 py-2">
                 <span className="sr-only">Edit</span>
               </th>
             </tr>
@@ -189,7 +189,7 @@ const Table = () => {
                   </div>
                 </div>
               </th>
-              <td className="px-3 py-2 text-right">
+              <td className="px-2 py-2 text-center">
                 <a
                   href="#"
                   className="font-medium text-indigo-600 dark:text-indigo-500 hover:underline"
@@ -216,7 +216,7 @@ const Table = () => {
                   </div>
                 </div>
               </th>
-              <td className="px-3 py-2 text-right">
+              <td className="px-2 py-2 text-center">
                 <a
                   href="#"
                   className="font-medium text-indigo-600 dark:text-indigo-500 hover:underline"
@@ -243,7 +243,7 @@ const Table = () => {
                   </div>
                 </div>
               </th>
-              <td className="px-3 py-2 text-right">
+              <td className="px-2 py-2 text-center">
                 <a
                   href="#"
                   className="font-medium text-indigo-600 dark:text-indigo-500 hover:underline"
@@ -270,7 +270,7 @@ const Table = () => {
                   </div>
                 </div>
               </th>
-              <td className="px-3 py-2 text-right">
+              <td className="px-2 py-2 text-center">
                 <a
                   href="#"
                   className="font-medium text-indigo-600 dark:text-indigo-500 hover:underline"
@@ -298,7 +298,7 @@ const Table = () => {
                 </div>
               </th>
 
-              <td className="px-3 py-2 text-right">
+              <td className="px-2 py-2 text-center">
                 <a
                   href="#"
                   className="font-medium text-indigo-600 dark:text-indigo-500 hover:underline"
@@ -311,7 +311,7 @@ const Table = () => {
         </table>
       </div>
 
-      {/* Button */}
+      {/* Purple Add Button */}
       <div className="flex space-x-2 justify-center my-5">
         <button
           type="button"
