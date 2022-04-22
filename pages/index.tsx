@@ -7,6 +7,7 @@ import Carousel from "../components/carousel/carousel";
 import Table from "../components/table/table";
 import ExerciseInfoModal from "../components/exercise-info-modal/exercise-info-modal";
 import TestForm from "../components/exercise-info-modal/test-form";
+import Stopwatch from "../components/stopwatch/stopwatch";
 
 const Home: NextPage = () => {
   return (
@@ -27,6 +28,7 @@ const Home: NextPage = () => {
             <Table />
             <ExerciseInfoModal />
             <TestForm />
+            <Stopwatch />
           </div>
         </main>
         <Footer />
