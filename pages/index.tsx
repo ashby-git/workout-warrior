@@ -8,6 +8,7 @@ import Table from "../components/table/table";
 import ExerciseInfoModal from "../components/exercise-info-modal/exercise-info-modal";
 import TestForm from "../components/exercise-info-modal/test-form";
 import Stopwatch from "../components/stopwatch/stopwatch";
+import Timer from "../components/timer/timer";
 
 const Home: NextPage = () => {
   return (
@@ -29,6 +30,7 @@ const Home: NextPage = () => {
             <ExerciseInfoModal />
             <TestForm />
             <Stopwatch />
+            <Timer />
           </div>
         </main>
         <Footer />
