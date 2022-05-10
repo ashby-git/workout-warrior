@@ -6,75 +6,89 @@ const Timer = () => {
   const [intervalId, setIntervalId] = useState<number>(0);
   const [disableStart, setDisableStart] = useState(false);
   const [disableStop, setDisableStop] = useState(false);
+  const [inputTime, setInputTime] = useState(false);
   const [timerEnd, setTimerEnd] = useState(false);
 
   useEffect(() => {
     setTimeArray(calculateTimeInSeconds(timeInSeconds));
   }, [timeInSeconds]);
 
-  const bgChange = disableStart
-    ? "bg-gradient-to-b from-gray-800 to-indigo-900"
-    : "bg-gradient-to-b from-gray-800 to-gray-700";
+  const bgChange =
+    disableStart && inputTime
+      ? "bg-gradient-to-b from-gray-800 to-indigo-900"
+      : "bg-gradient-to-b from-gray-800 to-gray-700";
 
   const addOneSecond = () => {
     setTimeInSeconds((previousState: number) => previousState + 1);
+    setInputTime(true);
   };
   const minusOneSecond = () => {
     if (timeInSeconds > 0) {
       setTimeInSeconds((previousState: number) => previousState - 1);
+      setInputTime(true);
     }
   };
   const addTenSeconds = () => {
     setTimeInSeconds((previousState: number) => previousState + 10);
+    setInputTime(true);
   };
   const minusTenSeconds = () => {
     if (timeInSeconds >= 10) {
       setTimeInSeconds((previousState: number) => previousState - 10);
+      setInputTime(true);
     }
   };
   const addOneMinute = () => {
     setTimeInSeconds((previousState: number) => previousState + 60);
+    setInputTime(true);
   };
   const addTenMinutes = () => {
     setTimeInSeconds((previousState: number) => previousState + 600);
+    setInputTime(true);
   };
   const minusOneMinute = () => {
     if (timeInSeconds >= 60) {
       setTimeInSeconds((previousState: number) => previousState - 60);
+      setInputTime(true);
     }
   };
   const minusTenMinutes = () => {
     if (timeInSeconds >= 600) {
       setTimeInSeconds((previousState: number) => previousState - 600);
+      setInputTime(true);
     }
   };
   const addOneHour = () => {
     setTimeInSeconds((previousState: number) => previousState + 3600);
+    setInputTime(true);
   };
   const addTenHours = () => {
     setTimeInSeconds((previousState: number) => previousState + 36000);
+    setInputTime(true);
   };
   const minusOneHour = () => {
     if (timeInSeconds >= 3600) {
       setTimeInSeconds((previousState: number) => previousState - 3600);
+      setInputTime(true);
     }
   };
   const minusTenHours = () => {
     if (timeInSeconds >= 36000) {
       setTimeInSeconds((previousState: number) => previousState - 36000);
+      setInputTime(true);
     }
   };
 
   const handleStartButton = (e: object) => {
-    const interval: any = setInterval(() => {
-      if (timeInSeconds > 0) {
+    if (inputTime) {
+      const interval: any = setInterval(() => {
         setTimeInSeconds((previousState: number) => previousState - 1);
-      }
-    }, 1000);
+      }, 1000);
 
-    setIntervalId(interval);
-    setDisableStart(true);
-    setDisableStop(false);
+      setIntervalId(interval);
+      setDisableStart(true);
+      setDisableStop(false);
+    }
   };
 
   const handleStopButton = () => {
@@ -88,6 +102,7 @@ const Timer = () => {
     setTimeInSeconds(0);
     setDisableStop(false);
     setDisableStart(false);
+    setInputTime(false);
   };
 
   function calculateTimeInSeconds(timeInSeconds: number): (number | string)[] {
@@ -102,7 +117,7 @@ const Timer = () => {
     ];
   }
 
-  if (timeInSeconds == 0 && disableStart) {
+  if (timeInSeconds == 0 && disableStart && inputTime) {
     handleReset();
     setTimerEnd(true);
     setTimeout(() => setTimerEnd(false), 4000);
