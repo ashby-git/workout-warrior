@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto sm:px-4 lg:px-8 lg:divide-y lg:divide-gray-200">
         <div className="relative h-16 flex justify-between">
           {/* Logo */}
-          <div className="relative z-10 px-2 flex lg:px-0">
+          <div className="relative z-1 px-2 flex lg:px-0">
             <div className="flex-shrink-0 flex items-center">
               <h3 className="text-xl font-bold">Workout Warrior</h3>
             </div>
