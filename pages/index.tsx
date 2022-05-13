@@ -9,8 +9,31 @@ import ExerciseInfoModal from "../components/exercise-info-modal/exercise-info-m
 import TestForm from "../components/exercise-info-modal/test-form";
 import Stopwatch from "../components/stopwatch/stopwatch";
 import Timer from "../components/timer/timer";
+import SlideOverPanel from "../components/slide-over-panel/slide-over-panel";
+import { useState } from "react";
+import { Button } from "../components/button/button";
 
 const Home: NextPage = () => {
+  const [openSlideOverPanel, setOpenSlideOverPanel] = useState(false);
+  const [slideOverPanelTitle, setSlideOverPanelTitle] = useState("");
+  const [slideOverPanelChild, setSlideOverPanelChild] = useState(<></>);
+
+  const toggle = () => {
+    setOpenSlideOverPanel(!openSlideOverPanel);
+  };
+
+  const stopwatchHandler = () => {
+    toggle();
+    setSlideOverPanelChild(<Stopwatch />);
+    setSlideOverPanelTitle("Stopwatch:");
+  };
+
+  const timerHandler = () => {
+    toggle();
+    setSlideOverPanelChild(<Timer />);
+    setSlideOverPanelTitle("Timer:");
+  };
+
   return (
     <div className={`${styles.container}`}>
       <Head>
@@ -29,8 +52,17 @@ const Home: NextPage = () => {
             <Table />
             <ExerciseInfoModal />
             <TestForm />
-            <Stopwatch />
-            <Timer />
+            <div className="flex justify-around my-6">
+              <Button onClick={stopwatchHandler}>Stopwatch</Button>
+              <Button onClick={timerHandler}>Timer</Button>
+            </div>
+            <SlideOverPanel
+              title={slideOverPanelTitle}
+              open={openSlideOverPanel}
+              toggle={toggle}
+            >
+              {slideOverPanelChild}
+            </SlideOverPanel>
           </div>
         </main>
         <Footer />

@@ -125,8 +125,8 @@ const Timer = () => {
 
   return (
     <>
-      <div className="min-w-screen min-h-screen bg-gray-100 flex items-center justify-center px-5 py-5">
-        <div className="w-full mx-auto rounded-xl bg-gray-100 shadow-xl text-gray-800 relative overflow-hidden ">
+      <div className="min-w-full min-h-full flex items-center justify-center">
+        <div className="w-full max-w-5xl mx-auto rounded-xl bg-gray-100 shadow-xl text-gray-800 relative overflow-hidden ">
           <div
             className={`${bgChange} w-full h-40 bg-gradient-to-b from-gray-800 to-gray-700 flex items-end text-right`}
           >
