@@ -1,5 +1,8 @@
 import React from "react";
 import { Popover } from "@headlessui/react";
+import { FcGoogle } from "react-icons/Fc";
+import { CgFacebook } from "react-icons/Cg";
+import { FaGithub } from "react-icons/Fa";
 
 const Login = () => {
   return (
@@ -34,28 +37,31 @@ const Login = () => {
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
-                  <a
-                    href="#"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                  <button
+                    title="Login with Facebook"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent 
+                    text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 md:w-44"
                   >
-                    Get started
-                  </a>
+                    <CgFacebook size="28" />
+                  </button>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <a
-                    href="#"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
+                  <button
+                    title="Login with Google"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent 
+                    text-base font-medium rounded-md text-indigo-700 bg-indigo-50 hover:bg-indigo-100 md:py-4 md:text-lg md:px-10 md:w-44"
                   >
-                    Get started
-                  </a>
+                    <FcGoogle size="28" />
+                  </button>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <a
-                    href="#"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
+                  <button
+                    title="Login with Github"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent 
+                    text-base font-medium rounded-md text-white bg-gray-700 hover:bg-gray-900 md:py-4 md:text-lg md:px-10 md:w-44"
                   >
-                    Get started
-                  </a>
+                    <FaGithub size="28" />
+                  </button>
                 </div>
               </div>
             </div>
