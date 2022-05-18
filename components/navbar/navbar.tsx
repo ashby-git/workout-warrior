@@ -1,4 +1,5 @@
 import React from "react";
+import { signOut } from "next-auth/react";
 
 const Navbar = () => {
   return (
@@ -14,6 +15,7 @@ const Navbar = () => {
           {/* Logout Button */}
           <div className="relative h-16 flex items-center px-2">
             <button
+              onClick={() => signOut()}
               className="w-full flex items-center justify-center lg:px-4 lg:py-2 px-2 py-1 
             border border-transparent rounded-md shadow-sm text-base font-medium text-white 
             bg-indigo-600 hover:bg-indigo-700 cursor-pointer"

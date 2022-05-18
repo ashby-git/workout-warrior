@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Popover } from "@headlessui/react";
 import { FcGoogle } from "react-icons/Fc";
 import { CgFacebook } from "react-icons/Cg";
 import { FaGithub } from "react-icons/Fa";
+import { signIn, useSession } from "next-auth/react";
+import { useRouter } from "next/router";
 
 const Login = () => {
+  const { data: session } = useSession();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (session) {
+      router.push("/");
+    }
+  }, [session, router]);
+
   return (
     <div className="relative bg-white overflow-hidden h-screen">
       <div className="max-w-7xl mx-auto">
@@ -38,6 +49,7 @@ const Login = () => {
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <button
+                    onClick={() => signIn("facebook")}
                     title="Login with Facebook"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent 
                     text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 md:w-44"
@@ -47,6 +59,7 @@ const Login = () => {
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <button
+                    onClick={() => signIn("google")}
                     title="Login with Google"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent 
                     text-base font-medium rounded-md text-indigo-700 bg-indigo-50 hover:bg-indigo-100 md:py-4 md:text-lg md:px-10 md:w-44"
@@ -56,6 +69,7 @@ const Login = () => {
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <button
+                    onClick={() => signIn("github")}
                     title="Login with Github"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent 
                     text-base font-medium rounded-md text-white bg-gray-700 hover:bg-gray-900 md:py-4 md:text-lg md:px-10 md:w-44"
