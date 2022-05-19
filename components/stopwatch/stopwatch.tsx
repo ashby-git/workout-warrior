@@ -53,9 +53,7 @@ const Stopwatch = () => {
   return (
     <div className="min-w-full min-h-full flex items-center justify-center">
       <div className="w-full max-w-5xl mx-auto rounded-xl bg-gray-100 shadow-xl text-gray-800 relative overflow-hidden ">
-        <div
-          className={`${bgChange} w-full h-40 bg-gradient-to-b from-gray-800 to-gray-700 flex items-end text-right`}
-        >
+        <div className={`${bgChange} w-full h-40 flex items-end text-right`}>
           <div className="w-full flex justify-center py-5 px-6 text-6xl md:text-8xl text-white font-thin font-mono">
             <p id="hour">{timeArray[0]}</p>
             <span>:</span>
