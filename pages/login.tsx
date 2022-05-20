@@ -5,6 +5,7 @@ import { CgFacebook } from "react-icons/Cg";
 import { FaGithub } from "react-icons/Fa";
 import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 const Login = () => {
   const { data: session } = useSession();
@@ -18,6 +19,14 @@ const Login = () => {
 
   return (
     <div className="relative bg-white overflow-hidden h-screen">
+      <Head>
+        <title>Workout Warrior | Login</title>
+        <meta
+          name="description"
+          content="A workout tracker, for all your exercise needs!"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="max-w-7xl mx-auto">
         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 lg:h-screen">
           <svg
